@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Day She Won My Heart</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#ffb3c6;
+  --secondary:#6a1b9a;
+  --accent:#ffd6ff;
+  --soft:rgba(255,255,255,0.85);
+  --glass:rgba(255,255,255,0.08);
+  --shadow:rgba(0,0,0,0.25);
+}
+
+html,body{
+  margin:0; padding:0;
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(135deg,#ff758c,#ff7eb3,#9d50bb);
+  color:#fff; min-height:100vh; overflow-x:hidden;
+}
+
+.glass{
+  background: var(--glass); backdrop-filter: blur(16px);
+  border-radius:20px; border:1px solid rgba(255,255,255,0.18);
+  padding:18px; box-shadow:0 10px 28px var(--shadow);
+}
+
+/* HERO */
+header.hero{
+  min-height:calc(100vh - 80px);
+  display:flex; align-items:center; justify-content:center; text-align:center; padding:28px 12px;
+}
+
+h1{
+  font-family:'Playfair Display',serif; font-size:2.6rem; letter-spacing:1px; margin-bottom:0.5rem;
+}
+
+.soft-text{ color:var(--soft); font-size:0.95rem; margin-top:6px; }
+
+.tags{ margin-top:12px; }
+.tag{ display:inline-block; padding:6px 12px; border-radius:999px; background: rgba(255,255,255,0.12); margin:4px 6px 0 0; font-size:0.82rem; }
+
+/* Timeline */
+.timeline{ position:relative; padding-left:18px; border-left:2px solid rgba(255,255,255,0.12); margin-top:12px; }
+.timeline .item{ margin-bottom:18px; }
+.highlight{ color: var(--accent); font-weight:600; }
+
+/* Badminton */
+.badminton-wrap{ display:flex; flex-direction:column; gap:12px; }
+.badminton-court{ position:relative; height:200px; border-radius:14px; overflow:hidden; background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.1); padding:12px; }
+.court-line{ position:absolute; left:8%; right:8%; top:50%; height:1px; background: rgba(255,255,255,0.2); }
+.net{ position:absolute; left:0; right:0; top:48%; height:2px; background: rgba(255,255,255,0.25); }
+.shuttle{ position:absolute; width:18px; height:18px; border-radius:50%; background:#fff; top:34%; left:8%; z-index:12; transform:translate(-50%,-50%) scale(0.9); opacity:0.98; }
+.racket{position:absolute;width:48px;height:48px;border-radius:50%;border:2px solid rgba(255,255,255,0.12);top: calc(100% - 60px);display:flex;align-items:center;justify-content:center;font-size:0.9rem;color: rgba(255,255,255,0.23);z-index:8;}
+.racket.left{left:12%;} .racket.right{right:12%;}
+.controls{display:flex;gap:12px;align-items:center;justify-content:center;padding-top:6px;}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);color:inherit;padding:8px 14px;border-radius:999px;}
+.win-holder{margin-top:12px;display:flex;align-items:center;justify-content:center;}
+.win-text{font-size:1.1rem;color:var(--accent);font-family:'Great Vibes',cursive;opacity:0;transform:translateY(8px) scale(0.98);transition:all .6s cubic-bezier(.2,.9,.25,1);}
+.win-text.show{opacity:1;transform:translateY(0) scale(1);}
+
+/* Proposal Chat Section */
+.chat-wrap{ margin-top:20px; display:flex; flex-direction:column; gap:12px; }
+.chat-bubble{ max-width:75%; padding:12px 18px; border-radius:18px; backdrop-filter: blur(12px); background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); opacity:0; transform:translateY(12px); animation:fadeUp 0.6s forwards; }
+.chat-bubble.me{align-self:flex-start;background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.18);}
+.chat-bubble.her{align-self:flex-end;background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.25); font-family:'Great Vibes', cursive; font-size:1.05rem; color:#ffd6ff;}
+.chat-bubble.show{opacity:1;transform:translateY(0);}
+
+@keyframes fadeUp{to{opacity:1; transform:translateY(0);}}
+
+/* small screens */
+@media (max-width:576px){ h1{font-size:2rem;} .shuttle{width:16px;height:16px;} }
+</style>
+</head>
+<body>
+
+<main class="py-4">
+  <header class="hero container">
+    <div class="glass w-100">
+      <h1>The Day She Won My Heart</h1>
+      <p class="soft-text">Not loud. Not trying. Just… different from everyone else.</p>
+      <div class="tags">
+        <span class="tag">🎨 Loves Art</span>
+        <span class="tag">🏸 Badminton</span>
+        <span class="tag">🔥 Free Fire</span>
+        <span class="tag">🍽️ Biryani</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="container my-4">
+    <div class="glass">
+      <h5 class="mb-2">Moments That Matter</h5>
+      <div class="timeline">
+        <div class="item"><p class="soft-text"><span class="highlight">Dec 28, 2025</span> — The day I met her. Something changed.</p></div>
+        <div class="item"><p class="soft-text"><span class="highlight">Jan 11, 2026</span> — The day I said it out loud.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Badminton Section -->
+  <section class="container my-4">
+    <div class="glass badminton-wrap">
+      <h5 class="mb-2">Epic Badminton Rally</h5>
+      <p class="soft-text">ayo badminton khlte ha ager jeett gyi thhoo sab kuch tumhra</p>
+      <div class="badminton-court" id="court">
+        <div class="net"></div>
+        <div class="court-line"></div>
+        <div class="shuttle" id="shuttle"></div>
+        <div class="racket left">🏸</div>
+        <div class="racket right">🏸</div>
+      </div>
+      <div class="controls">
+        <button class="btn-ghost" id="playBtn">Start Rally</button>
+        <button class="btn-ghost" id="resetBtn">Reset</button>
+      </div>
+      <div class="win-holder"><div class="win-text" id="winText"></div></div>
+    </div>
+  </section>
+
+  <!-- Proposal Chat -->
+  <section class="container my-4">
+    <div class="glass chat-wrap">
+      <div class="chat-bubble me" id="msgMe">Abu Zar: I love you, please marry me 💌</div>
+      <div class="chat-bubble her" id="msgHer">Maryam: I love you too, yes! ❤️</div>
+    </div>
+  </section>
+
+  <footer class="text-center mt-4 mb-3"><small style="opacity:.7;">Made with ❤️ for a memorable moment.</small></footer>
+</main>
+
+<script>
+const playBtn=document.getElementById('playBtn');
+const resetBtn=document.getElementById('resetBtn');
+const shuttle=document.getElementById('shuttle');
+const winText=document.getElementById('winText');
+let animRunning=false;
+
+function resetWin(){winText.classList.remove('show'); winText.textContent='';}
+
+function createRallyAnimation(){
+  const court=document.getElementById('court');
+  const rect=court.getBoundingClientRect();
+  const startX=rect.width*0.12, midX=rect.width*0.78, startY=rect.height*0.34, midY=rect.height*0.60;
+  // multiple hits: left->right->left->right->left
+  const frames=[
+    {transform:`translate(${startX}px,${startY}px) scale(0.9)`, offset:0},
+    {transform:`translate(${midX}px,${midY}px) scale(1.02) rotate(10deg)`, offset:0.2},
+    {transform:`translate(${startX}px,${startY}px) scale(0.95) rotate(-8deg)`, offset:0.4},
+    {transform:`translate(${midX}px,${midY}px) scale(1.01) rotate(6deg)`, offset:0.6},
+    {transform:`translate(${startX}px,${startY}px) scale(0.97) rotate(-4deg)`, offset:0.8},
+    {transform:`translate(${midX}px,${midY}px) scale(1) rotate(0deg)`, offset:1}
+  ];
+  return shuttle.animate(frames,{duration:4000,easing:'cubic-bezier(.21,.9,.15,1)',iterations:1,fill:'forwards'});
+}
+
+function typeWinText(text,el,delay=50){el.textContent=''; el.classList.remove('show'); let i=0;
+  function step(){if(i<=text.length){el.textContent=text.slice(0,i); i++; setTimeout(step,delay);} else{el.classList.add('show');}} step();
+}
+
+playBtn.addEventListener('click',()=>{
+  if(animRunning) return; animRunning=true; resetWin();
+  const anim=createRallyAnimation();
+  anim.onfinish=()=>{setTimeout(()=>{typeWinText('You win… everything.',winText,55); animRunning=false;},400);}
+});
+
+resetBtn.addEventListener('click',()=>{
+  if(animRunning) return; shuttle.getAnimations().forEach(a=>a.cancel()); shuttle.style.transform=''; resetWin();
+});
+
+window.addEventListener('load',()=>{
+  const me=document.getElementById('msgMe'), her=document.getElementById('msgHer');
+  me.classList.add('show'); setTimeout(()=>{her.classList.add('show');},1200);
+  const court=document.getElementById('court'); const rect=court.getBoundingClientRect();
+  const startX=rect.width*0.12, startY=rect.height*0.34;
+  shuttle.style.transform=`translate(${startX}px,${startY}px) scale(0.9)`;
+});
+</script>
+
+</body>
+</html>
